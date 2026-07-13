@@ -30,14 +30,12 @@ private:
 
 
 public:
-
     /**
      * @brief Creates a web server.
      *
      * @param id Server identifier
      */
     WebServer(int id);
-
 
     /**
      * @brief Assigns a request to the server.
@@ -46,16 +44,12 @@ public:
      */
     void assignRequest(Request request);
 
-
-
     /**
      * @brief Processes one clock cycle.
      *
      * Decreases remaining request time.
      */
     void processCycle();
-
-
 
     /**
      * @brief Checks whether server is available.
@@ -64,8 +58,6 @@ public:
      */
     bool isIdle();
 
-
-
     /**
      * @brief Gets server ID.
      *
@@ -73,15 +65,12 @@ public:
      */
     int getID();
 
-
-
     /**
      * @brief Returns current request.
      *
      * @return Current request
      */
     Request getRequest();
-
 
 };
 
